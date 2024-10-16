@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgauth"
+    tools:context=".view.ui.lokasi.AddLocationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tambah Lokasi"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:textColor="@color/blue"/>
+
+                <ImageView
+                    android:id="@+id/im_add_photos"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/baseline_person_add_24"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/et_add_namaPIC"
+                    android:background="@drawable/custom_edittext"
+                    android:layout_marginTop="20dp"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:hint="Nama Lokasi"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:textColor="@color/black"
+                    android:drawablePadding="8dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/et_add_teleponPIC"
+                    android:background="@drawable/custom_edittext"
+                    android:layout_marginTop="20dp"
+                    android:inputType="numberDecimal"
+                    android:padding="8dp"
+                    android:hint="Contact PIC"
+                    android:drawableLeft="@drawable/baseline_assignment_ind_24"
+                    android:textColor="@color/black"
+                    android:drawablePadding="8dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/et_add_urlMapsLokasi"
+                    android:background="@drawable/custom_edittext"
+                    android:layout_marginTop="20dp"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:hint="Url Maps lokasi"
+                    android:drawableLeft="@drawable/baseline_map_24"
+                    android:textColor="@color/black"
+                    android:drawablePadding="8dp"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Tambahkan"
+                    android:id="@+id/btn_tambahkan"
+                    android:textSize="18sp"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/blue"
+                    app:cornerRadius = "20dp"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

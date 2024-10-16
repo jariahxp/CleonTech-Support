@@ -1,0 +1,73 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    >
+
+    <!-- Username -->
+    <TextView
+        android:layout_marginStart="13dp"
+        android:id="@+id/tvDialogUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Username: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Gejala -->
+    <TextView
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvDialogGejalaTitle"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="Gejala : "
+        app:layout_constraintEnd_toStartOf="@id/tvDialogGejala"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDialogUsername" />
+
+    <TextView
+        android:id="@+id/tvDialogGejala"
+        android:layout_width="0dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/tvDialogGejalaTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDialogUsername"
+        android:paddingStart="8dp"/> <!-- Padding untuk memberi jarak antara title dan gejala -->
+
+    <!-- Hasil -->
+    <TextView
+        android:id="@+id/tvDialogHasilTitle"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginStart="13dp"
+
+        android:textStyle="bold"
+        android:text="Hasil   : "
+        app:layout_constraintEnd_toStartOf="@id/tvDialogHasil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDialogGejala" />
+
+    <TextView
+        android:id="@+id/tvDialogHasil"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/tvDialogHasilTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDialogGejala"
+        android:paddingStart="8dp"/> <!-- Padding untuk memberi jarak antara title dan hasil -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

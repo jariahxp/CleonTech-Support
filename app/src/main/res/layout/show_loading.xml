@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_loading"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+<ProgressBar
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:indeterminate="true" />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Proses sedang Berlangsung"
+android:textSize="16sp"
+android:paddingTop="10dp" />
+
+    </LinearLayout>

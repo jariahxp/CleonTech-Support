@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_marginVertical="3dp"
+    android:background="@drawable/bg_item_view_recao">
+
+    <!-- Teks detail -->
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="cek detail.."
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Tanggal recap -->
+    <TextView
+        android:id="@+id/tv_viewrecap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="tanggal recap"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- RecyclerView untuk list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/batas2" />
+
+    <!-- Garis pemisah 1 -->
+    <View
+        android:id="@+id/batas1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="25dp"
+
+        android:visibility="gone"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tv_viewrecap" />
+
+    <!-- Lokasi -->
+    <TextView
+        android:id="@+id/tvlokasi"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="lokasi"
+        android:visibility="gone"
+        android:layout_marginTop="3dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/batas1" />
+
+    <!-- Sales -->
+    <TextView
+        android:id="@+id/tvsales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="penggunaan"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:layout_marginTop="3dp"
+
+        app:layout_constraintStart_toEndOf="@id/tvlokasi"
+        app:layout_constraintTop_toBottomOf="@id/batas1" />
+
+    <!-- Garis pemisah 2 -->
+    <View
+        android:id="@+id/batas2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="8dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvsales" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

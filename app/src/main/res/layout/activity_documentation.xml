@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.document.DocumentationActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:title=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Dokumentasi "
+            android:textColor="@color/white"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_item_view_recao"
+        android:orientation="vertical"
+        android:paddingHorizontal="5dp"
+        android:paddingTop="10dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@id/open"
+        tools:layout_editor_absoluteX="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="File Dokumen"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/namedokumen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="klik untuk upload dokumen"
+            android:textSize="12dp"
+            android:textStyle="italic" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Judul Pengembangan"
+            android:textSize="10dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/et_judulpengembangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="4dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/custom"
+            android:hint="Tuliskan keterangan disini"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:paddingHorizontal="8dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Keterangan Pengembangan"
+            android:textSize="10dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/et_add_keterangan"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/custom"
+            android:hint="Tuliskan keterangan disini"
+            android:inputType="textMultiLine"
+        android:gravity="top"
+        android:paddingHorizontal="8dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btn_tambah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="100dp"
+            android:layout_marginBottom="5dp"
+            android:text="Add" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/bg_item_view_recao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginStart="10dp"
+            android:text="Tambahkan dokumentasi"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+
+
+        <Button
+            android:id="@+id/btn_open_add"
+            android:layout_width="90dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content"
+            android:text="Open"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/bantuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:layout_marginStart="12dp"
+        android:text="Berikut adalah riwayat pengembangan"
+        android:textStyle="italic"
+        android:textSize="12dp"
+        android:visibility="visible"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/open" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/coba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="4dp"
+        android:text="Add"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bantuan" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Bayangan -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:topRightRadius="150dp" android:bottomRightRadius="150dp"/>
+            <solid android:color="#40000000"/> <!-- Warna bayangan (abu-abu transparan) -->
+            <padding android:left="10dp" android:top="10dp" android:right="0dp" android:bottom="10dp"/>
+        </shape>
+    </item>
+
+    <!-- Bentuk utama -->
+    <item android:top="5dp" android:left="5dp">
+        <shape android:shape="rectangle">
+            <corners android:topRightRadius="150dp" android:bottomRightRadius="150dp"/>
+            <solid android:color="#231815"/> <!-- Warna bentuk utama -->
+        </shape>
+    </item>
+</layer-list>

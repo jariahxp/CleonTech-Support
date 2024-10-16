@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "973963689091",
+    "project_id": "cleontech-support",
+    "storage_bucket": "cleontech-support.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973963689091:android:b0e8259ad543c622f3efb6",
+        "android_client_info": {
+          "package_name": "com.capstone.cleontech_support"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB67hoIvz9ehqoFmit0WA_nIqRi5_JQUyc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973963689091:android:f8105c6712feb37bf3efb6",
+        "android_client_info": {
+          "package_name": "com.cleon.polinema"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB67hoIvz9ehqoFmit0WA_nIqRi5_JQUyc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

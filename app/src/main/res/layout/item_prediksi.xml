@@ -1,0 +1,56 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/bg_item_lokasi">
+
+    <!-- Tanggal -->
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Tanggal: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Username -->
+    <TextView
+        android:id="@+id/tvTanggal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Username: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUsername" />
+
+    <!-- Keterangan Gejala -->
+    <TextView
+        android:id="@+id/tvGejalaTitle"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="Gejala : "
+        app:layout_constraintEnd_toStartOf="@id/tvGejala"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTanggal" />
+
+    <TextView
+        android:id="@+id/tvGejala"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/tvGejalaTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTanggal"
+        android:paddingStart="8dp"/> <!-- Padding untuk memberi jarak antara title dan gejala -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
